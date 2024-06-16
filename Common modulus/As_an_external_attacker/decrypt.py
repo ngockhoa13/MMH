@@ -29,4 +29,10 @@ c2 = 363885559993585822543801840244273543021862566951306692537667765468164957290
 gcd, x, y = extended_euclid_gcd(e1, e2)
 print(gcd)
 m = (pow(c1, x, n) * pow(c2, y, n)) % n
+<<<<<<< HEAD
 print(ltb(gmpy2.iroot(m,3)[0]))
+=======
+print(ltb(m))
+
+
+>>>>>>> 2a2a5be12888c11f47096847df207ef45e1be1db
