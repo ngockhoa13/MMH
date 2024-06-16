@@ -42,5 +42,5 @@ print("q =", q)
 phi_n = (p - 1) * (q - 1)
 d = pow(e, -1, phi_n)
 m = pow(ct, d, n)
-
+print("d= ", d) 
 print("m =", long_to_bytes(m))

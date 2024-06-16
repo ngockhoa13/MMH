@@ -2,17 +2,17 @@ from Crypto.Util.number import *
 from secret import FLAG
 
 pt=bytes_to_long(FLAG)
-p1=getPrime(512)
-q1=getPrime(512)
+p1=getPrime(2048)
+q1=getPrime(2048)
 N1=p1*q1
 e=3
 ct1=pow(pt,e,N1)
-p2=getPrime(512)
-q2=getPrime(512)
+p2=getPrime(2048)
+q2=getPrime(2048)
 N2=p2*q2
 ct2=pow(pt,e,N2)
-p3=getPrime(512)
-q3=getPrime(512)
+p3=getPrime(2048)
+q3=getPrime(2048)
 N3=p3*q3
 ct3=pow(pt,e,N3)
 

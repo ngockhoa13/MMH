@@ -2,12 +2,12 @@ from Crypto.Util.number import getPrime, bytes_to_long as b2l
 from secret import FLAG
 pl = b2l(FLAG)
 
-p = getPrime(512)
-q = getPrime(512)
+p = getPrime(2048)
+q = getPrime(2048)
 
 
 n = p * q
-peek = p >> 240
+peek = p >> 920
 ct = pow(pl, 65537, n)
 print(f"{n = }")
 print(f"{peek = }")

@@ -6,8 +6,8 @@ from secret import FLAG
 def genprimes():
     ok =  btl(b'nn90ckh04_w4s_h3r3')
     while True:
-        p = getPrime(512)
-        q = ok *p +  randint(pow(2,255), pow(2, 256) - 1)
+        p = getPrime(2048)
+        q = ok *p +  randint(pow(2,1023), pow(2, 1024) - 1)
         if isPrime(q):
             return p, q
 

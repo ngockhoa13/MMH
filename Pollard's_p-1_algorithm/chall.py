@@ -14,8 +14,8 @@ def gensmoothprime(bitlen, smoothness ):
             return q + 1
 
 def genprimes():
-    p = gensmoothprime(1024, 18)
-    q = getPrime(1024)
+    p = gensmoothprime(2048, 18)
+    q = getPrime(2048)
     return p, q
 
 p, q = genprimes()

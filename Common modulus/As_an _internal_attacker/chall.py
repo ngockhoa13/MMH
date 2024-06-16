@@ -5,8 +5,8 @@ from secret import FLAG
 e=65537
 your_e = getPrime(20)
 msg=btl(FLAG)
-p=getPrime(512)
-q=getPrime(512)
+p=getPrime(2048)
+q=getPrime(2048)
 n=p*q
 assert(msg < n)
 ct=pow(msg, e, n)
